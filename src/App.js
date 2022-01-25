@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Main from "./components/Main";
 import Navbar from "./components/navbar";
 import SingUp from "./components/SignUp";
+import Login from "./components/Login"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" />
           <Route path="/user/sign-up" element={<SingUp />} />
+          <Route path="/user/login" element={<Login />} />
         </Routes>
       </ChakraProvider>
     </Router>
